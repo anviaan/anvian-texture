@@ -1,9 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');/*font poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*font poppins*/
+
 /*colors and style scrollbar*/
-::-webkit-scrollbar {width: 10px;}
-::-webkit-scrollbar-track {background: #f1f1f1;}
-::-webkit-scrollbar-thumb {background: #37D814;}
-::-webkit-scrollbar-thumb:hover {background: #26B107;}
+::-webkit-scrollbar {
+      width: 10px;
+}
+
+::-webkit-scrollbar-track {
+      background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+      background: #37D814;
+}
+
+::-webkit-scrollbar-thumb:hover {
+      background: #26B107;
+}
 
 * {
       margin: 0;
@@ -53,6 +66,7 @@ p {
       color: #fff;
       font-size: 16px;
       font-weight: 300;
+      margin: 0;
 }
 
 /* navbar */
@@ -60,12 +74,10 @@ nav {
       height: 70px;
       line-height: 70px;
 
-      a {
-            img {
-                  vertical-align: middle;
-                  width: 30px;
-                  height: 30px;
-            }
+      img {
+            vertical-align: middle;
+            width: 30px;
+            height: 30px;
 
             &:nth-child(2) {
                   float: right;
@@ -77,10 +89,13 @@ nav {
 header {
       margin: 4% 1% 1% 1%;
       text-align: center;
+
       p {
             margin-top: 1%;
             font-size: 20px;
+
       }
+
       .download {
             margin: 20px 20px 20px 20px;
             height: 50px;
@@ -138,7 +153,7 @@ header {
 footer h3 {
       text-align: center;
       color: grey;
-      margin: 20px ;
+      margin: 20px;
 }
 
 .social {
@@ -151,7 +166,8 @@ footer h3 {
             li {
                   display: inline-block;
                   margin-right: 10px;
-                  &:hover{
+
+                  &:hover {
                         border: #fff 1px solid;
                   }
 
@@ -168,38 +184,86 @@ footer h3 {
 /* Responsiveness */
 @media only screen and (max-width: 991px) {
       header {
-            text-align: left;
-            margin: 100px 0 100px 30px;
-      }
+            text-align: center;
+            margin: 2% 2% 10% 2%;
 
-      header h1 {
-            font-size: 36px;
-      }
+            h1 {
+                  font-size: 36px;
+            }
 
-      header p {
-            font-size: 12px;
-            width: 90%;
+            p {
+                  font-size: 15px;
+            }
       }
 
       .work img {
             margin: 2%;
-            width: 90%;
       }
 
       .header2 {
-            margin: 130px 0 40px 12px;
-      }
+            margin: 4% 1% 2% 1%;
 
-      .header2 h1 {
-            font-size: 36px;
-      }
+            h1 {
+                  font-size: 36px;
+            }
 
-      .header2 p {
-            font-size: 12px;
-            width: 90%;
+            p {
+                  font-size: 12px;
+            }
       }
 
       .work2 img {
             margin: 2%;
+      }
+}
+
+@media only screen and (max-width: 660px) {
+      .social {
+            h3 {
+                  font-size: 1rem;
+            }
+      }
+}
+
+@media only screen and (max-width: 525px) {
+      header {
+            .download {
+                  .button1 {
+                        padding: 10px 22px;
+                  }
+            }
+      }
+
+      .social {
+            h3 {
+                  font-size: 0.8rem;
+            }
+      }
+}
+
+@media only screen and (max-width: 475px) {
+      header {
+            h1 {
+                  font-size: 30px;
+            }
+
+            p {
+                  font-size: 15px;
+            }
+
+            .button1 {
+                  font-size: 13px;
+                  padding: 8px 20px;
+            }
+      }
+
+      .imagenes {
+            #texto {
+                  font-size: 25px;
+            }
+
+            img {
+                  width: 90%;
+            }
       }
 }
