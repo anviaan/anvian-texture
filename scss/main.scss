@@ -82,7 +82,7 @@ header{
     text-align: center;
     width: 100%;
     #texto{
-        font-size: 45px;
+        font-size: 40px;
     }
     img{
         margin: 1%;
@@ -131,35 +131,30 @@ footer{
 @media only screen and (max-width: 1024px) {
     header {
         text-align: center;
-        margin: 2% 2% 10% 2%
-    }
-
-    header h1 {
-        font-size: 36px
-    }
-
-    header p {
-        font-size: 15px
-    }
-
-    .work img {
-        margin: 2%
+        margin: 2% 2% 5% 2%;
+        h1{
+            font-size: 35px
+        }
+        p{
+            font-size: 15px
+        }
     }
 
     .header2 {
-        margin: 4% 1% 2% 1%
+        margin: 4% 1% 2% 1%;
+        h1{
+            font-size: 35px;
+        }
+        p{
+            font-size: 12px;
+        }
     }
-
-    .header2 h1 {
-        font-size: 36px
-    }
-
-    .header2 p {
-        font-size: 12px
-    }
-
-    .work2 img {
-        margin: 2%
+    footer{
+        .social{
+            h3{
+                font-size: 13px;
+            }
+        }
     }
 }
 
@@ -188,7 +183,7 @@ footer{
     }
 
     .imagenes #texto {
-        font-size: 20px
+        font-size: 18px
     }
 
     .imagenes img {
