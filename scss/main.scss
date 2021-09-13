@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+::-webkit-scrollbar {width: 10px}
+::-webkit-scrollbar-track {background: #f1f1f1}
+::-webkit-scrollbar-thumb {background: #37D814}
+::-webkit-scrollbar-thumb:hover {background: #26B107}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    vertical-align: baseline;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body {
+    width: 100%;
+    background: #0E0E0E;
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        margin: 0
+    }
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navBar{
+    height: 70px;
+    line-height: 70px;
+    img{
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+    }
+    img:nth-child(2) {
+        float: right;
+    }
+    &::after{
+        content: "";
+        clear: both;
+        display: table;
+
+    }
+}
+header{
+    margin: 4% 1% 1% 1%;
+    text-align: center;
+    h1 {
+        color: #fff;
+        font-size: 48px;
+    }
+    p{
+        margin-top: 1%;
+        font-size: 20px;
+    }
+    .download {
+        margin: 20px 20px 20px 20px;
+        height: 50px;
+    }
+    .button1 {
+        background: #37D814;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 6px 4px;
+        cursor: pointer;
+        &:hover{
+            background: #26B107;
+            border: #fff 2px solid;
+        }
+    }
+}
+.imagenes {
+    text-align: center;
+    width: 100%;
+    #texto{
+        font-size: 45px;
+    }
+    img{
+        margin: 1%;
+        width: 45%;
+    }
+}
+
+.header2 {
+    margin: 5% 0 3% 2%;
+    text-align: center;
+    h1{
+        font-size: 30px;
+    }
+}
+
+footer{
+    .social{
+        margin: 20px 0;
+        h3{
+            text-align: center;
+            color: grey;
+            margin: 20px
+
+        }
+        ul{
+            list-style: none;
+            text-align: center;
+            li{
+                display: inline-block;
+                margin-right: 10px;
+                &:hover{
+                    border: #fff 1px solid;
+                }
+                a{
+                    display: block;
+                    padding: 10px 20px;
+                    color: white;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        text-align: center;
+        margin: 2% 2% 10% 2%
+    }
+
+    header h1 {
+        font-size: 36px
+    }
+
+    header p {
+        font-size: 15px
+    }
+
+    .work img {
+        margin: 2%
+    }
+
+    .header2 {
+        margin: 4% 1% 2% 1%
+    }
+
+    .header2 h1 {
+        font-size: 36px
+    }
+
+    .header2 p {
+        font-size: 12px
+    }
+
+    .work2 img {
+        margin: 2%
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header .download .button1 {
+        padding: 10px 22px
+    }
+
+    .social h3 {
+        font-size: 0.8rem
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    header h1 {
+        font-size: 25px
+    }
+
+    header p {
+        font-size: 10px
+    }
+
+    header .button1 {
+        font-size: 13px;
+        padding: 5px 10px
+    }
+
+    .imagenes #texto {
+        font-size: 20px
+    }
+
+    .imagenes img {
+        width: 90%
+    }
+}
+@media only screen and (max-width: 420px) {
+    .navBar img {
+        width: 20px;
+        height: auto;
+    }
+
+    header {
+        h1 {
+            font-size: 20px;
+        }
+        p{
+            font-size: 10px;
+        }
+        .download{
+            margin: 5% 0 0 0;
+            .button1{
+                padding: 5px 10px;
+            }
+        }
+    }
+    .header2{
+        h1{
+            font-size: 18px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    footer{
+        .social{
+            font-size: 20px;
+            h3{
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    .navBar{
+        height: 40px;
+    }
+    .download{
+        a{
+            .button1{
+                font-size: 10px;
+            }
+        }
+    }
+}
